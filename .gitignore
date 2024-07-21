@@ -1,5 +1,6 @@
 .idea
 .env
+/autotweet/.env
 /chatbot/.env
 
 # Byte-compiled / optimized / DLL files
