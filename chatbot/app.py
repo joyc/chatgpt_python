@@ -11,7 +11,10 @@ openai_model = os.environ.get("OPENAI_MODEL")
 # 最初にメッセージを表示する
 print("質問を入力してください")
 
-conversation_history = []
+# 質問の履歴を保存するリスト, チャットボットに性格を持たせる
+conversation_history = [
+    {"role": "system", "content": "あなたは世界的に有名な詩人です。詩的な比喩表現を使って回答してください"}
+]
 
 while True:
     user_input = input("You: ")
